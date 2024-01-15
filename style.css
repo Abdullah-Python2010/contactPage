@@ -1,0 +1,139 @@
+
+:root{
+    --blc: #111729;
+    --pur: #4036a9;
+    --ash: #cdd5e039;
+    --wh: #f8fafc;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Be Vietnam Pro', 'Poppins', sans-serif;
+}
+
+body{
+    background: url('./Img/bg-image.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.nav{
+    padding: 30px 25px;
+    height: 35px;
+}
+
+.header{
+    text-align: center;
+    width: 70%;
+    max-width: 80%;
+    margin: 20px auto 25px;
+    color: #fff;
+    /* border: 5px solid var(--blc); */
+}
+
+.header h1{
+    font-size: 64px;
+}
+
+.header h3{
+    font-size: 32px;
+    font-weight: 200;
+    margin-top: 20px;
+    line-height: 40px;
+}
+
+.Input{
+    background: var(--ash);
+    width: 50%;
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input, select{
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+
+input::placeholder{
+    color: #cdd5e0;
+}
+
+.small{
+    flex-basis: 45%;
+}
+
+.input-box label{
+    color: var(--wh);
+    font-size: 14px;
+}
+
+textarea {
+
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+    resize: vertical;
+    outline: none;
+
+
+}
+
+.text{
+    width: 100%;
+    flex-basis: 100%;
+}
+
+button{
+    border: none;
+    width: 100%;
+    flex-basis: 100%;
+    margin-top: 20px;
+    background-color: var(--wh);
+    color: var(--pur);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+@media screen and (max-width: 1080px) {
+    .Input, .header{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .small{
+        flex-basis: 100%;
+    }
+
+    h1{
+        font-size: 32px !important;
+    }
+    h3{
+        font-size: 16px !important;
+        line-height: 12px;
+    }
+}
